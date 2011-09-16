@@ -1,3 +1,4 @@
+source 'http://rubygems.org'
 gem 'rails', '3.1.0'
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
@@ -20,6 +21,5 @@ gem "devise", ">= 1.4.5"
 gem 'frontend-helpers'
 gem 'RedCloth'
 gem 'bourbon'
-gem "website_builder_engine"
 gem 'html2textile', :git => 'git://github.com/jystewart/html2textile.git'
-
+gem "website_builder_engine"
