@@ -1,3 +1,0 @@
-h1. Website for Feng Shui Expert Consulting
-
-Source for "San Francisco Feng Shui Expert Consulting":http://fengshui-expert-consulting.com/sanfrancisco.html.
