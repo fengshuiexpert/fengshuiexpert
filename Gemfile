@@ -23,3 +23,5 @@ gem 'RedCloth'
 gem 'bourbon'
 gem 'html2textile', :git => 'git://github.com/jystewart/html2textile.git'
 gem "website_builder_engine"
+gem "thin"
+gem "heroku"
