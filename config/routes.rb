@@ -1,11 +1,18 @@
 Fengshuiexpert::Application.routes.draw do
   #get \"users\/show\"
 
-  root :to => "home#index"
+  authenticate :user do
+    mount WebsiteBuilderEngine::Engine, :at => '/builder'
+  end
+
+  # make the offer page the home page
+  root :to => redirect('/sanfrancisco.html')
 
   devise_for :users
-  resources :users, :only => :show
+  resources :users, :only => [:index, :show]
 
+  # redirect all unknown pages to the offer page
+  match '*path' => redirect('/sanfrancisco.html')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
